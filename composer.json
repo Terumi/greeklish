@@ -1,0 +1,12 @@
+{
+    "name": "ffy/greeklish",
+    "description": "A package to turn greek phrases to greeklish",
+    "authors": [
+        {
+            "name": "Tasos Protopapas",
+            "email": "tasos@ffyeah.gr"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
