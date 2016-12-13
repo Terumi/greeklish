@@ -8,5 +8,10 @@
         }
     ],
     "require": {},
+    "autoload": {
+        "psr-4": {
+            "ffy\\greeklish\\": "src/"
+        }
+    },
     "minimum-stability": "dev"
 }
