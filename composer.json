@@ -7,5 +7,6 @@
             "email": "tasos@ffyeah.gr"
         }
     ],
-    "require": {}
+    "require": {},
+    "minimum-stability": "dev"
 }
