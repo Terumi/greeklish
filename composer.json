@@ -1,6 +1,6 @@
 {
     "name": "ffy/greeklish",
-    "description": "A package to turn greek phrases to greeklish",
+    "description": "A package to turn greek words to greeklish",
     "authors": [
         {
             "name": "Tasos Protopapas",
