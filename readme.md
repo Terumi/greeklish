@@ -5,15 +5,21 @@ This is for usage mainly on creating slugs.
 
 ####Installation:
 
-1. add this to your composer.json
+1. add to your composer.json:
+```php
+"ffy/greeklish": "dev-master"
+```
+2. execute on your consoleQ         
+```php
+composer update
+```
 
-       "ffy/greeklish": "dev-master"              
-2. execute a 
-        
-       composer update
-3. add this line to your config/app.php aliases array:
-
-       'Greek' => ffy\greeklish\GreeklishFacade::class,
+3. add to your config/app.php aliases array:
+```php
+'Greek' => ffy\greeklish\GreeklishFacade::class,
+```
     
 ####usage:
-    Greek::convert('Ήρθε μια γριά από την πόλη και έφερε τον Χάση-χάση, παναγίτσα μου να χάσει!')        
+```php
+    Greek::convert('Ήρθε μια γριά από την πόλη και έφερε τον Χάση-χάση, παναγίτσα μου να χάσει!')
+```
