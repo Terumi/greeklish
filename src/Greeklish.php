@@ -42,7 +42,33 @@
                 'χ' => 'x',
                 'ψ' => 'ps',
                 ' ' => '-',
-                '-' => '-'
+                '-' => '-',
+                'a' => 'a',
+                'b' => 'b',
+                'c' => 'c',
+                'd' => 'd',
+                'e' => 'e',
+                'f' => 'f',
+                'g' => 'g',
+                'h' => 'h',
+                'i' => 'i',
+                'j' => 'j',
+                'k' => 'k',
+                'l' => 'l',
+                'm' => 'm',
+                'n' => 'n',
+                'o' => 'o',
+                'p' => 'p',
+                'q' => 'q',
+                'r' => 'r',
+                's' => 's',
+                't' => 't',
+                'u' => 'u',
+                'v' => 'v',
+                'w' => 'w',
+                'x' => 'x',
+                'y' => 'y',
+                'z' => 'z',
             ];
         }
 
@@ -60,12 +86,21 @@
 
         public function convert($string) {
 
-            $string = mb_strtolower($string, 'utf8');
+            $string = str_replace(' - ', ' ', $string);
+            $string = str_replace(' ΕΠΕ', '', $string);
+            $string = str_replace(' Ε.Π.Ε', '', $string);
+            $string = str_replace(' ΟΕ', '', $string);
+            $string = str_replace(' Ο.Ε.', '', $string);
+            $string = str_replace(' ΑΕ', '', $string);
+            $string = str_replace(' Α.Ε.', '', $string);
+            $string = str_replace(' Ο.Β.Ε.Ε.', '', $string);
 
+            $string = mb_strtolower($string, 'utf8');
+            $string = str_replace('&', 'kai', $string);
 
             $letter_array = $this->mbStringToArray($string);
             $letter_array = array_map(function ($letter) {
-                if (!isset($this->lookout_table[$letter]))
+                if (!isset( $this->lookout_table[$letter] ))
                     return '';
 
                 return $this->lookout_table[$letter];
