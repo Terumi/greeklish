@@ -5,13 +5,13 @@ This is for usage mainly on creating slugs.
 
 ####Installation:
 
-1. On your terminal write composer require ffy/greeklish.
+1. add "ffy/greeklish": "dev-master" to your composer.json
 2. do a composer update
 3. add this line to your config/app.php aliases array:
 
-       'Greeklish' => ffy\greeklish\GreeklishFacade::class,
+       'Greek' => ffy\greeklish\GreeklishFacade::class,
     
 ####usage:
-    Greeklish::convert('Ήρθε μια γριά από την πόλη και έφερε τον Χάση-χάση, παναγίτσα μου να χάσει!')
+    Greek::convert('Ήρθε μια γριά από την πόλη και έφερε τον Χάση-χάση, παναγίτσα μου να χάσει!')
     
     
