@@ -3,13 +3,13 @@
 A simple laravel package that turns greek text to greeklish.
 This is for usage mainly on creating slugs.
 
-####Installation:
+###Installation:
 
 1. add to your composer.json:
 ```php
 "ffy/greeklish": "dev-master"
 ```
-2. execute on your consoleQ         
+2. execute on your console:        
 ```php
 composer update
 ```
@@ -19,7 +19,7 @@ composer update
 'Greek' => ffy\greeklish\GreeklishFacade::class,
 ```
     
-####usage:
+###usage:
 ```php
 Greek::convert('Ήρθε μια γριά από την πόλη και έφερε τον Χάση-χάση, παναγίτσα μου να χάσει!')
 ```
