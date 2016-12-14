@@ -23,3 +23,5 @@ Append to your config/app.php aliases array:
 ```php
 Greek::convert('Ήρθε μια γριά από την πόλη και έφερε τον Χάση-χάση, παναγίτσα μου να χάσει!')
 ```
+
+more to come...
